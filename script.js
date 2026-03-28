@@ -1,4 +1,5 @@
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
 if (!prefersReducedMotion && window.gsap) {
   gsap.registerPlugin(ScrollTrigger);
@@ -156,29 +157,66 @@ if (!prefersReducedMotion && window.gsap) {
   });
 }
 
-const magneticItems = document.querySelectorAll(".magnetic-button, .magnetic-card");
+if (canHover) {
+  const magneticItems = document.querySelectorAll(".magnetic-button, .magnetic-card");
 
-magneticItems.forEach((item) => {
-  item.addEventListener("pointermove", (event) => {
-    if (prefersReducedMotion) {
+  magneticItems.forEach((item) => {
+    item.addEventListener("pointermove", (event) => {
+      if (prefersReducedMotion) {
+        return;
+      }
+
+      const rect = item.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const moveX = ((x - rect.width / 2) / rect.width) * 16;
+      const moveY = ((y - rect.height / 2) / rect.height) * 16;
+
+      item.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+    });
+
+    item.addEventListener("pointerleave", () => {
+      item.style.transform = "";
+    });
+  });
+}
+
+const header = document.querySelector(".site-header");
+const mobileMenu = document.querySelector("#mobile-menu");
+const navToggle = document.querySelector(".nav-toggle");
+
+if (navToggle && mobileMenu) {
+  const closeMenu = () => {
+    mobileMenu.hidden = true;
+    mobileMenu.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Abrir menu");
+  };
+
+  navToggle.addEventListener("click", () => {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+
+    if (isOpen) {
+      closeMenu();
       return;
     }
 
-    const rect = item.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    const moveX = ((x - rect.width / 2) / rect.width) * 16;
-    const moveY = ((y - rect.height / 2) / rect.height) * 16;
-
-    item.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+    mobileMenu.hidden = false;
+    mobileMenu.classList.add("is-open");
+    navToggle.setAttribute("aria-expanded", "true");
+    navToggle.setAttribute("aria-label", "Fechar menu");
   });
 
-  item.addEventListener("pointerleave", () => {
-    item.style.transform = "";
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
   });
-});
 
-const header = document.querySelector(".site-header");
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      closeMenu();
+    }
+  });
+}
 
 window.addEventListener("scroll", () => {
   if (!header) {

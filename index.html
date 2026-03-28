@@ -42,7 +42,28 @@
         <a href="#interface" class="nav-link">Interface</a>
       </nav>
 
-      <a href="#cta" class="nav-cta">Experimentar</a>
+      <div class="header-actions">
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#cta" class="nav-cta">Experimentar</a>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="#som" class="mobile-menu-link">Experiencia</a>
+      <a href="#descoberta" class="mobile-menu-link">Descoberta</a>
+      <a href="#curadoria" class="mobile-menu-link">Playlists</a>
+      <a href="#interface" class="mobile-menu-link">Interface</a>
+      <a href="#cta" class="mobile-menu-link mobile-menu-cta">Experimentar Melodia</a>
     </div>
   </header>
 
@@ -101,7 +122,7 @@
             </div>
           </div>
 
-          <div class="hero-visual reveal-scale">
+          <div class="hero-visual">
             <div class="floating-note note-left hero-float" data-depth="18">
               <span>Pulse Night</span>
               <strong>Descoberta editorial</strong>
@@ -424,8 +445,8 @@
           Descubra artistas novos, ouca com qualidade superior e viva uma experiencia musical com presenca de marca real.
         </p>
         <div class="cta-actions reveal-up">
-          <a href="#" class="button-primary magnetic-button">Comecar agora</a>
-          <a href="#" class="button-secondary">Ver planos</a>
+          <a href="#som" class="button-primary magnetic-button">Explorar o som</a>
+          <a href="#curadoria" class="button-secondary">Ver playlists vivas</a>
         </div>
       </div>
     </section>
