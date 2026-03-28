@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melodia | Som que envolve, descoberta que vibra</title>
+  <meta
+    name="description"
+    content="Melodia e o app de musica premium para quem quer som imersivo, playlists personalizadas e descoberta constante de novos artistas."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="melodia-body text-white antialiased">
+  <div class="noise-layer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-6 sm:px-6 lg:px-10">
+      <a href="#inicio" class="brand-mark" aria-label="Melodia, voltar ao topo">
+        <span class="brand-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="brand-word">Melodia</span>
+      </a>
+
+      <nav aria-label="Navegacao principal" class="hidden items-center gap-8 lg:flex">
+        <a href="#som" class="nav-link">Experiencia</a>
+        <a href="#descoberta" class="nav-link">Descoberta</a>
+        <a href="#curadoria" class="nav-link">Playlists</a>
+        <a href="#interface" class="nav-link">Interface</a>
+      </nav>
+
+      <a href="#cta" class="nav-cta">Experimentar</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="hero-aurora hero-float" data-depth="14" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-halo hero-float" data-depth="26" aria-hidden="true"></div>
+      <div class="hero-spotlight" aria-hidden="true"></div>
+
+      <div class="mx-auto max-w-7xl px-5 pb-16 pt-24 sm:px-6 lg:px-10 lg:pb-24 lg:pt-28">
+        <div class="hero-topline reveal-up">
+          <span class="eyebrow-pill">
+            <i class="fa-solid fa-wave-square"></i>
+            Som espacial com curadoria viva
+          </span>
+          <span class="eyebrow-copy">Criado para quem sente a musica antes mesmo do refrao.</span>
+        </div>
+
+        <div class="hero-stage">
+          <div class="hero-copy reveal-up">
+            <p class="section-kicker">Premium music experience</p>
+            <h1 class="hero-title">
+              Descubra o
+              <span>lado mais vivo</span>
+              da musica.
+            </h1>
+            <p class="hero-description">
+              O Melodia mistura audio de alta fidelidade, playlists que aprendem com o seu ritmo
+              e uma jornada visual pensada para transformar cada play em atmosfera.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#cta" class="button-primary magnetic-button">
+                Baixar o app
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="#som" class="button-secondary">
+                Explorar a experiencia
+              </a>
+            </div>
+
+            <div class="hero-metrics">
+              <article class="metric-chip">
+                <strong>Hi-Res</strong>
+                <span>Qualidade sonora superior</span>
+              </article>
+              <article class="metric-chip">
+                <strong>+12 mil</strong>
+                <span>novos artistas sugeridos por semana</span>
+              </article>
+              <article class="metric-chip">
+                <strong>Para voce</strong>
+                <span>Playlists ajustadas ao seu momento</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal-scale">
+            <div class="floating-note note-left hero-float" data-depth="18">
+              <span>Pulse Night</span>
+              <strong>Descoberta editorial</strong>
+            </div>
+
+            <div class="floating-note note-right hero-float" data-depth="22">
+              <span>Spatial Mood</span>
+              <strong>Som que envolve em camadas</strong>
+            </div>
+
+            <div class="phone-shell magnetic-card">
+              <div class="phone-glare" aria-hidden="true"></div>
+              <div class="phone-screen">
+                <div class="screen-status">
+                  <span>23:47</span>
+                  <span>
+                    <i class="fa-solid fa-signal"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-battery-three-quarters"></i>
+                  </span>
+                </div>
+
+                <div class="screen-cover">
+                  <div class="cover-orb cover-a"></div>
+                  <div class="cover-orb cover-b"></div>
+                  <div class="cover-text">
+                    <span>Now flowing</span>
+                    <h2>Afterglow Frequency</h2>
+                    <p>LYRA NOVA</p>
+                  </div>
+                </div>
+
+                <div class="playback-panel">
+                  <div class="track-row">
+                    <div>
+                      <strong>Afterglow Frequency</strong>
+                      <p>Album visual selecionado para sua madrugada</p>
+                    </div>
+                    <button aria-label="Adicionar aos favoritos">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+
+                  <div class="waveform" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <div class="track-meta">
+                    <span>01:12</span>
+                    <span>03:42</span>
+                  </div>
+
+                  <div class="player-controls">
+                    <button aria-label="Musica anterior"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="play-button" aria-label="Reproduzir"><i class="fa-solid fa-play"></i></button>
+                    <button aria-label="Proxima musica"><i class="fa-solid fa-forward-step"></i></button>
+                  </div>
+                </div>
+
+                <div class="mix-strip">
+                  <div class="mix-card">
+                    <span>Descoberta diaria</span>
+                    <strong>Vozes que ainda nao explodiram</strong>
+                  </div>
+                  <div class="mix-card muted">
+                    <span>Seu clima</span>
+                    <strong>Neon drive</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-bottom-ribbon reveal-up">
+              <span>Som premium</span>
+              <span>Descoberta viva</span>
+              <span>Curadoria dinamica</span>
+              <span>Interface intuitiva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="som" class="story-section sound-section">
+      <div class="section-aura" aria-hidden="true"></div>
+      <div class="mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-6 lg:grid-cols-[0.92fr_1.08fr] lg:px-10 lg:py-28">
+        <div class="reveal-up">
+          <p class="section-kicker">Experiencia sonora</p>
+          <h2 class="section-title">
+            Um palco intimo entre voce,
+            <span>o grave, o brilho e o silencio.</span>
+          </h2>
+          <p class="section-copy">
+            Em vez de apresentar recursos como uma lista fria, o Melodia constroi uma sensacao:
+            profundidade sonora, resposta imediata e atmosfera visual sincronizada com cada faixa.
+          </p>
+        </div>
+
+        <div class="sound-chamber reveal-scale">
+          <div class="chamber-core">
+            <div class="core-ring ring-one"></div>
+            <div class="core-ring ring-two"></div>
+            <div class="core-ring ring-three"></div>
+            <div class="chamber-center">
+              <span>Ultra clear audio</span>
+              <strong>Som premium com presenca cinematografica</strong>
+            </div>
+          </div>
+
+          <article class="sound-node node-top">
+            <i class="fa-solid fa-volume-high"></i>
+            <div>
+              <strong>Textura limpa</strong>
+              <p>Detalhe nos medios e brilho refinado sem ruido visual.</p>
+            </div>
+          </article>
+
+          <article class="sound-node node-right">
+            <i class="fa-solid fa-sliders"></i>
+            <div>
+              <strong>Resposta precisa</strong>
+              <p>Transicoes suaves entre climas, generos e intensidades.</p>
+            </div>
+          </article>
+
+          <article class="sound-node node-bottom">
+            <i class="fa-solid fa-headphones-simple"></i>
+            <div>
+              <strong>Imersao continua</strong>
+              <p>Camadas que fazem o app parecer mais proximo de um sistema de audio do que de um feed.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="descoberta" class="story-section discovery-section">
+      <div class="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-10 lg:py-28">
+        <div class="discovery-heading reveal-up">
+          <p class="section-kicker">Descoberta musical</p>
+          <div class="heading-row">
+            <h2 class="section-title">
+              O algoritmo nao empurra.
+              <span>Ele revela.</span>
+            </h2>
+            <p class="section-copy">
+              A experiencia de descoberta foi pensada como curadoria viva: artistas emergentes, atmosferas
+              inesperadas e rotas visuais que convidam a explorar alem do obvio.
+            </p>
+          </div>
+        </div>
+
+        <div class="discovery-composition">
+          <article class="artist-spotlight reveal-up magnetic-card">
+            <span class="mini-label">Spotlight da semana</span>
+            <h3>AYLA RHEA</h3>
+            <p>Neo soul etereo com pulsacao eletronica e presenca de palco magnetica.</p>
+            <div class="artist-tags">
+              <span>Neo soul</span>
+              <span>Alt-pop</span>
+              <span>Live session</span>
+            </div>
+          </article>
+
+          <article class="discovery-stream reveal-scale">
+            <div class="stream-line" aria-hidden="true"></div>
+            <div class="stream-item">
+              <span>Agora surgindo</span>
+              <strong>Bedroom synth com alma de arena</strong>
+            </div>
+            <div class="stream-item">
+              <span>Voce pode gostar</span>
+              <strong>Ritmos latinos com textura noturna</strong>
+            </div>
+            <div class="stream-item active">
+              <span>Descoberta para 02:00 AM</span>
+              <strong>Vozes intimas, graves quentes, refroes lentos</strong>
+            </div>
+          </article>
+
+          <article class="listener-card reveal-up">
+            <span class="mini-label">Listening journal</span>
+            <blockquote>
+              "Parece que o app entende quando eu quero energia e quando eu quero desaparecer dentro do som."
+            </blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="curadoria" class="story-section playlist-section">
+      <div class="mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-6 lg:grid-cols-[1fr_1fr] lg:px-10 lg:py-28">
+        <div class="playlist-orbit reveal-scale">
+          <div class="orbit-track orbit-a"></div>
+          <div class="orbit-track orbit-b"></div>
+          <div class="orbit-center">
+            <span>Pulse engine</span>
+            <strong>Playlists que mudam com seu contexto</strong>
+          </div>
+
+          <article class="orbit-card orbit-one magnetic-card">
+            <span>Para focar</span>
+            <strong>Low light coding</strong>
+            <p>Texturas continuas, sem interrupcao do fluxo.</p>
+          </article>
+
+          <article class="orbit-card orbit-two magnetic-card">
+            <span>Para sair</span>
+            <strong>Neon district</strong>
+            <p>Batida crescente e energia para movimento.</p>
+          </article>
+
+          <article class="orbit-card orbit-three magnetic-card">
+            <span>Para descobrir</span>
+            <strong>Tomorrow's voices</strong>
+            <p>Artistas novos selecionados pelo seu padrao de escuta.</p>
+          </article>
+        </div>
+
+        <div class="reveal-up">
+          <p class="section-kicker">Curadoria personalizada</p>
+          <h2 class="section-title">
+            Menos listas genericas.
+            <span>Mais trilhas com identidade.</span>
+          </h2>
+          <p class="section-copy">
+            Cada playlist nasce de comportamento, horario, atmosfera e apetite por novidade. O resultado
+            parece menos "recomendacao automatica" e mais direcao musical de verdade.
+          </p>
+
+          <div class="playlist-points">
+            <article class="point-card">
+              <i class="fa-solid fa-stars"></i>
+              <div>
+                <strong>Curadoria de momento</strong>
+                <p>O app ajusta sugestoes para madrugada, deslocamento, treino ou concentracao.</p>
+              </div>
+            </article>
+            <article class="point-card">
+              <i class="fa-solid fa-sparkles"></i>
+              <div>
+                <strong>Descoberta sem friccao</strong>
+                <p>Novos artistas aparecem no fluxo sem quebrar o seu clima atual.</p>
+              </div>
+            </article>
+            <article class="point-card">
+              <i class="fa-solid fa-brain"></i>
+              <div>
+                <strong>Aprende o seu ritmo</strong>
+                <p>Quanto mais voce ouve, mais o Melodia acerta intencao, energia e textura.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interface" class="story-section interface-section">
+      <div class="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-10 lg:py-28">
+        <div class="interface-shell reveal-up">
+          <div class="interface-copy">
+            <p class="section-kicker">Interface intuitiva</p>
+            <h2 class="section-title">
+              Elegancia para explorar muito
+              <span>sem precisar pensar demais.</span>
+            </h2>
+            <p class="section-copy">
+              Navegacao simples, leitura clara e movimento refinado. A interface do Melodia foi desenhada para
+              parecer premium sem ficar pesada, e moderna sem perder calor humano.
+            </p>
+          </div>
+
+          <div class="interface-panels">
+            <article class="ui-panel panel-main reveal-scale magnetic-card">
+              <span class="mini-label">Home dinamica</span>
+              <strong>Sua trilha do dia organizada por energia</strong>
+              <div class="panel-bars" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </article>
+
+            <article class="ui-panel panel-side reveal-up">
+              <span class="mini-label">Biblioteca fluida</span>
+              <strong>Salvar, explorar e retomar sem atrito</strong>
+            </article>
+
+            <article class="ui-panel panel-side reveal-up">
+              <span class="mini-label">Busca sensivel</span>
+              <strong>Encontre por artista, humor, textura ou momento</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="mx-auto max-w-5xl px-5 py-24 text-center sm:px-6 lg:py-28">
+        <p class="section-kicker reveal-up">Entre no universo Melodia</p>
+        <h2 class="cta-title reveal-up">
+          Seu proximo som favorito
+          <span>ja esta vibrando por perto.</span>
+        </h2>
+        <p class="cta-copy reveal-up">
+          Descubra artistas novos, ouca com qualidade superior e viva uma experiencia musical com presenca de marca real.
+        </p>
+        <div class="cta-actions reveal-up">
+          <a href="#" class="button-primary magnetic-button">Comecar agora</a>
+          <a href="#" class="button-secondary">Ver planos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-8 text-sm text-white/65 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+      <div>
+        <strong class="text-white">Melodia</strong>
+        <span class="ml-3">Experiencia premium para descobrir, sentir e repetir.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>
